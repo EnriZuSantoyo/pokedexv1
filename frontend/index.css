@@ -1,0 +1,251 @@
+  body {
+  background-color: rgb(239, 64, 54);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding-top: 150px; 
+  }
+
+  #tablaLogin {
+    text-shadow: #a68deb;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #tablaBusqueda {
+    text-shadow: #a68deb;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #pokeResultados {
+    text-shadow: #a68deb;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tablaBusqueda {
+    text-shadow: #a68deb;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .barraNavegacion {
+  text-shadow: #a68deb;
+  background-color: rgb(239, 64, 54);
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width: 100vw; 
+  z-index: 1000; 
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  }
+
+
+  .imagenPokebola {
+    display: block;
+    height: 80px;
+    width: 80px;
+  }
+
+  #nombrePoke {
+    text-shadow: #a68deb;
+    color: black;
+    font-size: 100%;
+    text-decoration: solid;
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+  }
+
+  #pokeDescription {
+    text-align: center;
+    background-color: rgb(248, 190, 180);
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+  }
+
+  .contenedor{
+    position: relative;
+  }
+
+  .pokeSprite2 {
+    position: absolute;
+    margin: 10%;
+    left: 3%;
+    top: 18%;
+    height: 30%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  #imagenResultados {
+    display: block;
+    height: auto;
+    width: auto;   
+  }
+
+  #tituloNavBar {
+    text-shadow: #a68deb;
+    color: black;
+    font-size: 500%;
+    text-decoration: solid;
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+
+  #tablaAddUsuarios {
+    text-shadow: #a68deb;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .botonLog {
+    background-color: rgb(248, 190, 180);
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+  }
+
+  #zonaLogin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #zonaBusqueda {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #zonaAddUsuarios {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #zonaToken {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #zonaAPIs {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #botonDesplegarAddUser {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #zonaAPIs > p {
+    color: navy;
+    margin-left: 20px;
+    text-decoration: underline;
+  }
+
+  #tablaToken {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #zonallamada1 {
+    font-size: 70%;
+    color:black;
+    min-height: 30rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+
+  .boton {
+    text-align: center;
+    background-color: blue;
+    vertical-align: middle;
+    position: relative;
+    font-weight: bold;
+  }
+
+  .textoTabla {
+    text-align: center;
+    background-color: rgb(248, 190, 180);
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+  }
+
+  .botonLog {
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+  }
+
+  .tablaUsers {
+    text-shadow: #a68deb;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    .tablaBusqueda {
+    text-shadow: #a68deb;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+
+  button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .tablagrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    background-color: rgb(248, 190, 180);
+    height: fit-content;
+    justify-content: space-around;
+  }
+  
+  .tablagrid > div {
+    background-color: #f1f1f1;
+    background-color: rgb(248, 190, 180);
+    width: 70%;
+    margin: 5%;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    padding: 10%;
+    justify-self: center;
+  }
+
+
+

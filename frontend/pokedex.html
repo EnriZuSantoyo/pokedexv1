@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es,en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <title>Login</title>
+</head>
+<body>   
+    
+    <div class="barraNavegacion">
+      <h2 id="tituloNavBar">Pokédex</h2>
+      <img class="imagenPokebola" src="./img/pokeball.png" alt="Pokedex EnriqueZS";>
+      <a href="index.html">Logout</a>
+    </div>
+
+    <h1></h1>
+
+    <div id="zonaBusqueda">
+        <table id="tablaBusqueda" class="tablaBusqueda">
+            <tr>
+              <td class="textoTabla"> Búsqueda individual <input type="text" id="fieldBusqueda" name="fname" placeholder="Nombre o ID del Pokémon"></td>
+              <td colspan="2" class="botonLog"><button id="botonBuscar">Buscar</button></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="botonLog"><button id="botonRandom">Mostrar un Pokémon al azar</button></td>
+            </tr>
+            <tr>
+              <td class="textoTabla">Pokédex completo:
+              <td>
+                <select onchange="buscaDropdown()" id="pokeDropdown">
+                <option value="">Selecciona un Pokémon</option>
+                </select>
+              </td>
+            </tr>
+        </table>
+    </div>
+
+    <h1></h1>
+
+    <div id="zonaResultados">
+      <table id="pokeResultados" class="pokeResultados">
+            <tr>
+              <td div class="contenedor"><img src="./img/pokedex.png"  alt="pokedex">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" class="pokeSprite2"  alt="pokeSprite"></td>
+              
+              <td id="nombrePoke">#01 Agumon </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="botonLog" id="pokeDescription">Description</td>
+            </tr>
+            <tr>
+              <td class="textoTabla">Tipo 1: </td>
+              <td class="textoTabla" id="pokeType1">----</td>
+            </tr>
+            <tr>
+              <td class="textoTabla">Tipo 2: </td>
+              <td class="textoTabla" id="pokeType2">N/A</td>
+            </tr>
+            <tr>
+              <td class="textoTabla">Altura:</td>
+              <td class="textoTabla" id="pokeAltura">50</td>
+            </tr>
+            <tr>
+              <td class="textoTabla">Peso:</td>
+              <td class="textoTabla" id="pokePeso">100</td>
+            </tr>
+            <tr>
+              <td class="textoTabla">Generación:</td>
+              <td class="textoTabla" id="pokeGeneracion">1111</td>
+            </tr>
+            <tr>
+              <td class="textoTabla">Legendario:</td>
+              <td class="textoTabla" id="pokeLegendario">Sí</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    
+
+<script src="pokedex.js"></script>
+</body>
+</html>

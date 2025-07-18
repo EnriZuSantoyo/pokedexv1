@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es,en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <title>Login</title>
+</head>
+<body>   
+    
+    <div class="barraNavegacion">
+      <img class="imagenPokebola" src="./img/pokeball.png" alt="Pokedex EnriqueZS";>
+      <h2 id="tituloNavBar">Pokédex</h2>
+
+    </div>
+
+    <p></p>
+    <!-- <button id="botonApis">Llamar APIs</button>-->
+
+    <div id="zonaLogin">
+        <table id="tablaLogin" class="tablaUsers">
+            <tr>
+              <td class="textoTabla">Usuario: </td>
+              <td><input type="text" id="fieldUsuario" name="fname" placeholder="usuario1"></td>
+            </tr>
+            <tr>
+              <td class="textoTabla">Contraseña: </td>
+              <td><input type="text" id="fieldPassword" name="fpass" placeholder="1234"></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="botonLog"><button id="botonLogin">Login</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="zonaToken">
+        <h1>Tu token secreto es: </h1>
+        <h1 id="miToken">Holi</h1>
+        <table id="tablaToken">
+            <tr>
+              <td class="textoTabla">Token: </td>
+              <td><input type="text" id="fieldToken" name="fnametoken" placeholder="Ingresa tu token"></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="botonLog"><button id="botonToken">Validate Token</button></td>
+            </tr>
+        </table>
+    </div>
+
+    
+    <div id="zonaAPIs"> 
+        <h1 id="mensaje">¡BIENVENIDOS! </h1>
+        <p id="notificaciones"></p>
+        <p id="rol"></p>
+        <p id="result1"></p>
+        <div class="tablagrid">
+            <div id="llamada1"><button class="botones" id="botonAPIpost">API POST<br><br> PÚBLICA</button></div>
+            <div id="llamada2"><button class="botones" id="botonAPIget">API GET <br><br> PÚBLICA</button></div>
+            <div id="zonallamada1">Mensaje a POSTEAR: <br /> <br />BODY:
+              {
+                 "name": "Apple MacBook Pro 16",
+                 "data": {
+                    "year": 2019,
+                    "price": 1849.99,
+                    "CPU model": "Intel Core i9",
+                    "Hard disk size": "1 TB"
+                 }
+              }</div>
+            <div id="zonallamada2"></div>
+        </div>
+    </div>
+
+    <button id="botonDesplegarAddUser">Crear Nuevo Usuario</button>
+    
+    <div id="zonaAddUsuarios">
+      <table id="tablaAddUsuarios" class="tablaUsers">
+          <tr>
+            <td class="textoTabla">ID Nuevo Usuario: </td>
+            <td><input type="text" id="fieldUsuarioNew" name="fname2" placeholder="usuario4"></td>
+          </tr>
+          <tr>
+            <td class="textoTabla">Contraseña: </td>
+            <td><input type="password" id="fieldPasswordNew" name="fpass2" placeholder="5678"></td>
+          </tr>
+          <tr>
+            <td class="textoTabla">Confirmar Contraseña: </td>
+            <td><input type="password" id="fieldPasswordNew2" name="fpass3" placeholder="5678"></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="botonLog"><button id="botonAddUser">Agregar Usuario</button></td>
+          </tr>
+      </table>
+    </div>
+
+    <p id="mensajeAddUsuario"></p>
+
+
+    
+<script src="login.js"></script>
+</body>
+</html>
