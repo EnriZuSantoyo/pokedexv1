@@ -35,7 +35,7 @@ document.getElementById("botonDesplegarAddUser")?.addEventListener("click", () =
 async function llamarLogin(usuario, contraseña) {
   const credenciales = { usuario, password: contraseña };
   try {
-    const res = await axios.post("http://127.0.0.1:8000/login", credenciales);
+    const res = await axios.post("https://pokedexv1.onrender.com/login", credenciales);
     localStorage.setItem("token", res.data.token);
     window.location.href = "pokedex.html";
   } catch (err) {
@@ -46,7 +46,7 @@ async function llamarLogin(usuario, contraseña) {
 //Validamos qu el token sea correcto y desplegamos su contenido 
 async function validarToken(token) {
   try {
-    const res = await axios.get("http://127.0.0.1:8000/datos", {
+    const res = await axios.get("https://pokedexv1.onrender.com/datos", {
       headers: { Authorization: `Bearer ${token}` },
     });
     document.getElementById("mensaje").innerHTML = res.data.mensaje;
@@ -64,7 +64,7 @@ async function validarToken(token) {
 function crearUsuario(user, pass) {
   const credenciales = { usuario: user, password: pass };
   axios
-    .post("http://127.0.0.1:8000/altas", credenciales)
+    .post("https://pokedexv1.onrender.com/altas", credenciales)
     .then((res) => {
       document.getElementById("mensajeAddUsuario").innerHTML = `<b>${res.data.mensaje}</b>`;
     })
