@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   try {
-    await axios.get("http://localhost:8000/datos", {
+    await axios.get("https://pokedexv1.onrender.com/datos", {
       headers: { Authorization: `Bearer ${token}` },
     });
     llenarDropdown();
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 async function llenarDropdown() {
   const dropdown = document.getElementById("pokeDropdown");
   try {
-    const res = await axios.get("http://localhost:8000/dropdown");
+    const res = await axios.get("https://pokedexv1.onrender.com/dropdown");
     dropdown.innerHTML = `<option value="">Selecciona un Pokémon</option>`;
     res.data.forEach((p) => {
       const opt = document.createElement("option");
@@ -56,8 +56,8 @@ function buscaPokemon(nombre) {
   if (!nombre) return alert("Ingresa un nombre o ID");
 
   let url = /^\d+$/.test(nombre)
-    ? `http://localhost:8000/pokemon/${nombre}`
-    : `http://localhost:8000/pokemon/name/${nombre}`;
+    ? `https://pokedexv1.onrender.com/pokemon/${nombre}`
+    : `https://pokedexv1.onrender.com/pokemon/name/${nombre}`;
 
   axios
     .get(url)
